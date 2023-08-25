@@ -1224,7 +1224,7 @@ When nothing is happening, `navigation.location` will be `undefined`, but when t
 
 👉 **Add classes to search form elements using the state**
 
-```tsx filename=app/routes/root.tsx lines=[3,14]
+```tsx filename=app/routes/root.tsx lines=[3,17]
 <Form id="search-form" role="search">
   <input
     className={searching ? "loading" : ""}
@@ -1303,7 +1303,7 @@ The ★ button on the contact page makes sense for this. We aren't creating or d
 
 👉 **Change the `<Favorite>` form to a fetcher form**
 
-```tsx filename=app/routes/contacts.$contactId.edit.tsx lines=[1,6,10,20]
+```tsx filename=app/routes/contacts.$contactId.tsx lines=[4,10,14]
 import {
   useLoaderData,
   Form,
